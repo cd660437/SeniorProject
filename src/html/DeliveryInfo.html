@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Delivery Address</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/newindex.html" class="w3-bar-item w3-button"><b>SJU</b> Go</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/orderNow.html" class="w3-bar-item w3-button">Order Now</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/aboutus.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/register.html" class="w3-bar-item w3-button">Sing In</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/singup.html" class="w3-bar-item w3-button">Sing Up</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/FAQs.html" class="w3-bar-item w3-button">FAQs</a>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="/Users/CDougherty/Desktop/GO SJU /img/Buildings/sjuCute.png" alt="Architecture" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Delivery Address </b></span> </h1>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+
+    <!-- About Section -->
+
+
+    <h2>Items will be delivered to...</h2>
+    <p>Please fill in the correct information below in order to ensure your items will be delivered to the correct location. </p>
+    <div class="row2">
+      <div class="col-75">
+        <div class="container7">
+          <form action="/action_page.php">
+
+            <div class="row2">
+              <div class="col-50">
+                <h3>Delivery Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                <label for="email"><i class="fa fa-envelope"></i> Email:</label>
+                <input type="text" id="email" name="email" placeholder="john@example.com">
+
+                <label for="phoneNum">Phone Number:</label>
+                <input type="text" id="PhoneNum" name="PhoneNum" placeholder="678-999-8212">
+
+              </div>
+              <h2>Select Building:</h2>
+
+              <div class="custom-select" style="width:200px;">
+                <select>
+                  <option value="0">Barbelin Hall</option>
+                  <option value="1">Bellarmine Hall</option>
+                  <option value="2">Connely Hall</option>
+                  <option value="3">Merion Hall</option>
+                  <option value="4">Mandeville Hall</option>
+                  <option value="5">O'Pake Rec Center</option>
+                  <option value="6">Science Center</option>
+                  <option value="7">Post Learning Commons (New Side)</option>
+                  <option value="8">Drexel Library (Old Side)</option>
+
+                </select>
+              </div>
+              <label for="roomNum"><i class="roomNum"></i> Room Number: </label>
+              <input type="text" id="fname" name="roomNum" placeholder="123">
+
+
+            </div>
+        </div>
