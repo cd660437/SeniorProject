@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P.O.D Market</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/Users/CDougherty/Desktop/GO SJU /src/css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/newindex.html" class="w3-bar-item w3-button"><b>SJU</b> Go</a>
+
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/orderNow.html" class="w3-bar-item w3-button">Order Now</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/aboutus.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/register.html" class="w3-bar-item w3-button">Sing In</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/singup.html" class="w3-bar-item w3-button">Sing Up</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/FAQs.html" class="w3-bar-item w3-button">FAQs</a>
+    </div>
+</div>
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn">Search</button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="#Candy">Candy</a>
+    <a href="#Drinks">Drinks</a>
+    <a href="#Dairy">Dairy</a>
+    <a href="#Shelf">Shelf Items</a>
+    <a href="#Frozen">Frozen</a>
+    <a href="#HNW">Health & Wellness</a>
+    <a href="#Supplies">School Supplies</a>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-family: arial;
+  }
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .card button:hover {
+    opacity: 0.7;
+  }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .dropbtn {
+    background-color: rgb(164, 159, 159);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgb(176, 176, 176);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: rgb(221, 221, 218);}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: rgb(77, 186, 126);}
+  </style>
+  </head>
+
+<body>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/podpic.jpeg" alt="Architecture" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>P.O.D Market Options</b></span> <span class="w3-xxlarge w3-text-black"><span class="w3-padding w3-white w3-opacity-min">Below</span></h1>
+    </div>
+  </header>
+
+  <h1 align="center" style="color:maroon;">P.O.D Options</h1>
+  <p style="color:maroon;font-size:160%;text-align:center;">Below you will find a large selection of snacks,
+    beverages, microwavable foods and more to choose from</p>
+
+
+  <!-- About the food Section -->
+
+  <p id="Candy">Candy:</p>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Candies/Crunch.png" alt="image" style="width:100%">
+        <h1>Nestle Crunch Bar</h1>
+        <p class="price">$1.75</p>
+        <p> A Chocolate bar made of milk chocolate and crisped rice</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Candies/Dove.png" alt="image" style="width:100%">
+        <h1>Dove Dark Chocolate</h1>
+        <p class="price">$2.25</p>
+        <p>Made with only the finest
+          cacao, DOVE PROMISES Silky Smooth Dark Chocolate Candy is a treat that will brighten your day</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Candies/Hearshey Kissed.png" alt="image" style="width:100%">
+        <h1>Hershey Kisses</h1>
+        <p class="price">$3.25</p>
+        <p>Bite-sized pieces of chocolate
+          have a distinctive shape, commonly described as flat-bottomed teardrops.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Candies/HershVar.png" alt="image" style="width:100%">
+        <h1>Hershey Variety Bag</h1>
+        <p class="price">$3.50</p>
+        <p>Assortmant of different small sized Hershey chocolates</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Candies/Reese.png" alt="image" style="width:100%">
+        <h1>Reese Pieces</h1>
+        <p class="price">$2.75</p>
+        <p>peanut butter bite size candy</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Candies/Twix.png" alt="image" style="width:100%">
+        <h1>Twix Bar</h1>
+        <p class="price">$1.50</p>
+        <p>Combination Of Smooth Chocolate, Chewy Caramel And Crisp Cookie.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Candies/sourpatch.png" alt="image" style="width:100%">
+        <h1>SourPatch Kids</h1>
+        <p class="price">$1.65</p>
+        <p>soft candy with a coating of invert sugar and sour sugar.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Candies/starburstmini.png" alt="image" style="width:100%">
+        <h1>Starbursts Minis</h1>
+        <p class="price">$2.75</p>
+        <p>details about food</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <p id="Drinks">Drinks:</p>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Drinks/pepsi.jpg" alt="image" style="width:100%">
+        <h1>16 Oz Pepsi</h1>
+        <p class="price">$1.75</p>
+        <p></p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Drinks/dietpepsi.jpg" alt="image" style="width:100%">
+        <h1>16 Oz Diet Pepsi</h1>
+        <p class="price">$1.75</p>
+        <p></p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Drinks/sprite.jpg" alt="image" style="width:100%">
+        <h1>16 Oz Sprite</h1>
+        <p class="price">$1.75</p>
+        <p></p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Drinks/fanta.jpg" alt="image" style="width:100%">
+        <h1>16 Oz Orange Crush</h1>
+        <p class="price">$1.75</p>
+        <p></p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Drinks/OJ.jpg" alt="image" style="width:100%">
+          <h1>16 Orange Juice</h1>
+          <p class="price">$2.50</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Drinks/cranberry.jpg" alt="image" style="width:100%">
+          <h1>16 Oz Cranberry Juice</h1>
+          <p class="price">$2.75</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Drinks/smartwater.jpg" alt="image" style="width:100%">
+          <h1>16 Oz Smart Water</h1>
+          <p class="price">$3.25</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Drinks/Rbeer.jpg" alt="image" style="width:100%">
+          <h1>16 Oz RootBeer</h1>
+          <p class="price">$1.75</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+
+  <p id="Dairy">Dairy:</p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/dairy/milk.jpg" alt="image" style="width:100%">
+          <h1>Milk</h1>
+          <p class="price">$3.50</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/dairy/choc.jpg" alt="image" style="width:100%">
+          <h1>Chocolate Milk</h1>
+          <p class="price">$3.75</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/dairy/eggs.jpg" alt="image" style="width:100%">
+          <h1>1 Dozen Eggs</h1>
+          <p class="price">$3.25</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+
+    <p id="Shelf">Shelf Items:</p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/coolRanch.jpg" alt="image" style="width:100%">
+          <h1>Cool Ranch Doritos</h1>
+          <p class="price">$3.50</p>
+          <p>Snack Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/nachochz.jpg" alt="image" style="width:100%">
+          <h1>Nacho Cheese Doritos</h1>
+          <p class="price">$3.50</p>
+          <p>Snack Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/Cheetos.jpg" alt="image" style="width:100%">
+          <h1>Cheetos</h1>
+          <p class="price">$3.25</p>
+          <p>Snack Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/originalLAYS.jpg" alt="image" style="width:100%">
+          <h1>Original Lays</h1>
+          <p class="price">$4.50</p>
+          <p>Family size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/origPRING.jp2" alt="image" style="width:100%">
+          <h1>Original Pringles</h1>
+          <p class="price">$2.99</p>
+          <p>Snack Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/sourCreamPring.jpg" alt="image" style="width:100%">
+          <h1>Sour Cream & Onion Pringles</h1>
+          <p class="price">$2.99</p>
+          <p>Snack Size cheddar cheese pretzel</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/cheddarPRING.jpg" alt="image" style="width:100%">
+          <h1>Cheddar Cheese Pringles</h1>
+          <p class="price">$2.99</p>
+          <p>Snack Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/chedchzCombo.jp2" alt="image" style="width:100%">
+          <h1>Cheddar Combos</h1>
+          <p class="price">$3.25</p>
+          <p>Snack Size cheddar cheese pretzel</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/popsecret.jpg" alt="image" style="width:100%">
+          <h1>Popseceret</h1>
+          <p class="price">$3.99</p>
+          <p>Family Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/tostitos.jp2" alt="image" style="width:100%">
+          <h1>Tostitos</h1>
+          <p class="price">$2.99</p>
+          <p>Family Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/kraft.jpg" alt="image" style="width:100%">
+          <h1>Kraft Mac & Cheese</h1>
+          <p class="price">$2.50</p>
+          <p>Family Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/EasyMac.jpg" alt="image" style="width:100%">
+          <h1>Kraft Easy Mac</h1>
+          <p class="price">$3.99</p>
+          <p>4 Pack Easy mac</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/elboPast.jp2" alt="image" style="width:100%">
+          <h1>Barilla Elbow Pasta</h1>
+          <p class="price">$1.99</p>
+          <p>Family Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/rotinipast.jp2" alt="image" style="width:100%">
+          <h1>Barilla Rotini Pasta</h1>
+          <p class="price">$1.99</p>
+          <p>Family Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/ShellPASt.jp2" alt="image" style="width:100%">
+          <h1>Barilla Shells Pasta</h1>
+          <p class="price">$1.99</p>
+          <p>Family Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/PennePAst.jpg" alt="image" style="width:100%">
+          <h1> Barilla Penne Pasta</h1>
+          <p class="price">$1.99</p>
+          <p>Family Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/TomSoup.jpg" alt="image" style="width:100%">
+          <h1>Campbell's Creamy Tomato </h1>
+          <p class="price">$3.25</p>
+          <p>Snack Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/chickennoodle.jp2" alt="image" style="width:100%">
+          <h1>Campbell's Chicken Noodle</h1>
+          <p class="price">$3.25</p>
+          <p>Snack Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/MushSoup.jpg" alt="image" style="width:100%">
+          <h1>Campbell's Cream of Mushroom</h1>
+          <p class="price">$3.99</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/shelfFood/creamychicSPU{.jp2" alt="image" style="width:100%">
+          <h1>Campbell's Cream of Chicken</h1>
+          <p class="price">$3.99</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+
+  <p id="Frozen">Frozen:</p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Frozen/mac.jpg" alt="image" style="width:100%">
+          <h1>Stouffer's Mac & Cheese</h1>
+          <p class="price">$2.99</p>
+          <p>Individual Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Frozen/pasta&chicken.jpg" alt="image" style="width:100%">
+          <h1>Stouffer's Pasta & Chicken</h1>
+          <p class="price">$3.99</p>
+          <p>Linguine pasta, chicken, roasted red peppers, and basil</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Frozen/digorno.jpg" alt="image" style="width:100%">
+          <h1>Digorno Frozen Pizza</h1>
+          <p class="price">$3.50</p>
+          <p>Italian style pizza with pepperoni</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Frozen/mixedVeg.jpg" alt="image" style="width:100%">
+          <h1>Mixed Frozen Vegetables</h1>
+          <p class="price">$2.25</p>
+          <p>Corn, carrots, string beans, and peas</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Frozen/chocchipcook.jpg" alt="image" style="width:100%">
+          <h1>Ben & Jerry's Chocolate Chip Cookie Dough</h1>
+          <p class="price">$4.75</p>
+          <p>Vanilla Ice Cream with Gobs of Chocolate Chip Cookie Dough.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Frozen/chubbyhubby.png" alt="image" style="width:100%">
+          <h1>Ben & Jerry's Chubby Hubby</h1>
+          <p class="price">$4.75</p>
+          <p>Vanilla Malt Ice Cream with Peanutty Fudge-covered Pretzels with Fudge & Peanut Buttery Swirls.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Frozen/halfbaked.jp2" alt="image" style="width:100%">
+          <h1>Ben & Jerry's Half Baked</h1>
+          <p class="price">$4.75</p>
+          <p>Chocolate & Vanilla Ice Creams mixed with Gobs of Chocolate Chip Cookie Dough & Fudge Brownies.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Frozen/strawBj.jpg" alt="image" style="width:100%">
+          <h1>Ben & Jerry's Strawberry Cheesecake</h1>
+          <p class="price">$4.75</p>
+          <p>Strawberry Cheesecake Ice Cream with Strawberries & a Thick Graham Cracker Swirl</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <p id="HNW">Health & Wellness:</p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/care/alegra.jpg" alt="image" style="width:100%">
+          <h1>Allegra</h1>
+          <p class="price">$5.75</p>
+          <p>Allergy relief.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/care/tylonal.jpg" alt="image" style="width:100%">
+          <h1>Tylonal </h1>
+          <p class="price">$6.75</p>
+          <p>8 Hour extra strength.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/care/daynight.jpg" alt="image" style="width:100%">
+          <h1>DayQuil & NyQuil</h1>
+          <p class="price">$9.99</p>
+          <p>Vicks Day & Night relief</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/care/tums.jp2" alt="image" style="width:100%">
+          <h1>Tums Travel Size</h1>
+          <p class="price">$7.75</p>
+          <p>Antiacid smoothie flavor</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/care/bandaids.jpg" alt="image" style="width:100%">
+          <h1>First Aid Kit</h1>
+          <p class="price">$4.75</p>
+          <p>Variety of sizes & types of bandaids.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/care/dryshampoo.jpg" alt="image" style="width:100%">
+          <h1>Dove Dry Shampoo</h1>
+          <p class="price">$5.80</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/care/bodywash.jp2" alt="image" style="width:100%">
+          <h1>Dove Body Wash</h1>
+          <p class="price">$4.75</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/care/tpastebrish.jp2" alt="image" style="width:100%">
+          <h1>Toothbrush & Toothpaste</h1>
+          <p class="price">$3.50</p>
+          <p>Colgate Travel Size</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <p id="Supplies">School Supplies:</p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Pencils.png" alt="OfficeSupply" style="width:100%">
+          <h1>72 Ticonderoga Pencils</h1>
+          <p class="price">$8.75</p>
+          <p>72 led pencils</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Pens.png" alt="OfficeSupply" style="width:100%">
+          <h1>60 Bic Black Pens</h1>
+          <p class="price">$7.70</p>
+          <p></p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Sharpies.png" alt="OfficeSupply" style="width:100%">
+          <h1>12 ct Sharpies</h1>
+          <p class="price">$9.99</p>
+          <p>Fine point</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Highlighter.png" alt="OfficeSupply" style="width:100%">
+          <h1>24 ct Bic Highlighters</h1>
+          <p class="price">$8.75</p>
+          <p>Variety pack</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Scissors.png" alt="OfficeSupply" style="width:100%">
+          <h1>2 Pack Scissors</h1>
+          <p class="price">$10.85</p>
+          <p>B & W Scissors</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Stapler.png" alt="OfficeSupply" style="width:100%">
+          <h1>One Touch Stapler</h1>
+          <p class="price">$15.75</p>
+          <p>Purpler Stapler</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Stickies.png" alt="OfficeSupply" style="width:100%">
+          <h1>Post-it Notes</h1>
+          <p class="price">$8.75</p>
+          <p>24 variety pack</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Folders.png" alt="OfficeSupply" style="width:100%">
+          <h1>Office Folders</h1>
+          <p class="price">$4.75</p>
+          <p>Pack of 5 multi colored folders.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Clip .png" alt="OfficeSupply" style="width:100%">
+          <h1>Binder Clip</h1>
+          <p class="price">$5.25</p>
+          <p>Pack of 24</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/paperClips.png" alt="OfficeSupply" style="width:100%">
+          <h1>Paperclip Kit</h1>
+          <p class="price">$3.75</p>
+          <p>6 colors of paperclips</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/Ruler.png" alt="OfficeSupply" style="width:100%">
+          <h1>Ruler</h1>
+          <p class="price">$1.75</p>
+          <p>Inches & Feet</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/pod/Supplies/IndexCards.png" alt="OfficeSupply" style="width:100%">
+          <h1>Index Cards</h1>
+          <p class="price">$4.75</p>
+          <p>100 index cards; 20 per color.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+
+
+    </body>
+    </html>

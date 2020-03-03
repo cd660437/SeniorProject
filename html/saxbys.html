@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SAXBYS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/Users/CDougherty/Desktop/GO SJU /src/css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/newindex.html" class="w3-bar-item w3-button"><b>SJU</b> Go</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/orderNow.html" class="w3-bar-item w3-button">Order Now</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/aboutus.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/register.html" class="w3-bar-item w3-button">Sing In</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/singup.html" class="w3-bar-item w3-button">Sing Up</a>
+        <a href="file:///Users/CDougherty/Desktop/GO%20SJU%20/src/html/FAQs.html" class="w3-bar-item w3-button">FAQs</a>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-family: arial;
+  }
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .card button:hover {
+    opacity: 0.7;
+  }
+</style>
+
+<body>
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxbys.jpg" alt="Architecture" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Saxbys Options</b></span>
+        <span class="w3-xxlarge w3-text-black"><span class="w3-padding w3-white w3-opacity-min">Below</span></h1>
+    </div>
+  </header>
+
+  <h1 align="center" style="color:maroon;">Saxbys Options</h1>
+  <p style="color:maroon;font-size:160%;text-align:center;">Below you will find an assortmant of drinks, food, and bakery items to choose from</p>
+
+
+  <!-- About the food Section -->
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/hotcoffee.jpg" alt="Hot Coffee" style="width:100%">
+        <h1>Dark Roast Brewed Coffee</h1>
+        <p class="price">Regular: $3.25</p>
+        <p>Take a sip and taste notes of dark chocolate, maple, & vanilla. Sourced
+          personally from: El Salvador (San Miguel region), Guatemala
+          (Huehuetenango region), & Colombia (Huila region).</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/icedLatteeee.jpg" alt="Iced Coffee" style="width:100%">
+        <h1>Iced Latte</h1>
+        <p class="price">Regular: $4.25</p>
+        <p>Freshly ground and brewed espresso, combined
+          with cold milk and served over ice</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/coldBrew.jpg" alt="Cold Brew" style="width:100%">
+        <h1>Cold Brew</h1>
+        <p class="price">Regular: $3.50 </p>
+        <p>Not just coffee over ice. We steep our coffee grounds
+          in cool water overnight to create the smoothest, most flavorful cold brew imaginable</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/matchaLattee.jpg" alt="Matcha Latte" style="width:100%">
+        <h1>Iced Matcha Latte</h1>
+        <p class="price">Regular: $4.00 </p>
+        <p>Calm energy, served over ice.
+          Made from 100% organic matcha from Matchaful NYC.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/pbBnana.jpg" alt="Smoothie" style="width:100%">
+        <h1>PB&B Smoothie</h1>
+        <p class="price">Regular $5.75</p>
+        <p>The PB&B is a mix of peanut butter, banana, Cold Brew and honey </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/avootoo.jpg" alt="image" style="width:100%">
+        <h1>Avocado Toast</h1>
+        <p class="price">$5.00</p>
+        <p>Whole wheat toast made with mashed avocado, salt, pepper, Everything but the Bagel seasoning and citrus juice dripped on top.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/plainB.jpg" alt="B" style="width:100%">
+        <h1>Toasted Plain Bagel</h1>
+        <p class="price">$2.20</p>
+        <p>Classic soft, chewy and thick New York–style bagel: whether
+          toasted or not, or with a smear of cream cheese or not, each bite tastes of authentic-baked goodness.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/bberryB.jpg" alt="blueberry" style="width:100%">
+        <h1>Toasted Blueberry Bagel</h1>
+        <p class="price">$ 2.75</p>
+        <p>Added whole blueberries to the chewy New York–style bagel for refreshing wholesome taste.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/choccris.jpg" alt="croissant" style="width:100%">
+        <h1>Chocolate Croissant</h1>
+        <p class="price">$3.00</p>
+        <p>A fresh croissant made with dark chocolate.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/cookie.jpg" alt="choccookie" style="width:100%">
+        <h1>Plant-Powered Chocolatechip Cookie</h1>
+        <p class="price">$1.75</p>
+        <p>100% plant-powered; made with locally sourced ingredients,
+           fair trade vegan chocolate, & no artificial flavors or preservatives. Contains no dairy, no egg, & no soy</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/muffie.jpg" alt="Muffin" style="width:100%">
+        <h1>Fresh Baked Blueberry Muffin</h1>
+        <p class="price">$2.50</p>
+        <p>Soft and moist with fresh blueberries and streusel topping</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="/Users/CDougherty/Desktop/GO SJU /src/img/foodplaces/saxby/oooats.jpg" alt="ON Oats" style="width:100%">
+        <h1>Blueberry Overnight Oats</h1>
+        <p class="price">$6.50</p>
+        <p>100% plant-powered. Gluten-free overnight oats made
+          in-house with oat milk, organic granola, chia seeds, & blueberries. Ready to mix & mingle</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
