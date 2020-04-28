@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+<?php 
+  include 'server.php';
+  if (!isset($_SESSION['email'])) {
+        $_SESSION['msg'] = "You must log in first";
+        header('location: singup.php');
+  }
+  if (isset($_GET['logout'])) {
+        session_destroy();
+        unset($_SESSION['email']);
+        header("location: singup.php");
+  }
+?>
+
 <head>
 <title>About Us HEY</title>
 <meta charset="UTF-8">
@@ -12,15 +25,13 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button"><b>SJU</b> Go</a>
+    <a href="homepage.php" class="w3-bar-item w3-button"><b>SJU</b> Go</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="orderNow.html" class="w3-bar-item w3-button">Order Now</a>
-      <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
-      <a href="login.php" class="w3-bar-item w3-button">Log In</a>
-      <a href="singup.php" class="w3-bar-item w3-button">Sign Up</a>
-      <a href="FAQs.html" class="w3-bar-item w3-button">FAQs</a>
-
+      <a href="orderNow.php" class="w3-bar-item w3-button">Order Now</a>
+      <a href="aboutus.php" class="w3-bar-item w3-button">About Us</a>
+      <a href="FAQs.php" class="w3-bar-item w3-button">FAQs</a>
+      <a href="/viewCart.php" class="w3-bar-item w3-button">My Cart</a>
 
     </div>
   </div>

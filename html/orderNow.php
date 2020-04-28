@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php 
+  include 'server.php'; 
+  if (!isset($_SESSION['email'])) {
+        $_SESSION['msg'] = "You must log in first";
+        header('location: singup.php');
+  }
+  if (isset($_GET['logout'])) {
+        session_destroy();
+        unset($_SESSION['email']);
+        header("location: singup.php");
+  }
+?>
 <title>Order From</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,19 +24,20 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button"><b>SJU</b> Go</a>
+    <a href="/homepage.php" class="w3-bar-item w3-button"><b>SJU</b> Go</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="orderNow.html" class="w3-bar-item w3-button">Order Now</a>
-      <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
-      <a href="login.php" class="w3-bar-item w3-button">Log In</a>
-      <a href="singup.php" class="w3-bar-item w3-button">Sign Up</a>
-      <a href="FAQs.html" class="w3-bar-item w3-button">FAQs</a>
-
+      <a href="/orderNow.php" class="w3-bar-item w3-button">Order Now</a>
+      <a href="/aboutus.php" class="w3-bar-item w3-button">About Us</a>
+      <a href="/FAQs.php" class="w3-bar-item w3-button">FAQs</a>
+      <a href="/viewCart.php"class="w3-bar-item w3-button">My Cart</a>
+      <a href="logout.php"       class="w3-bar-item w3-button"> Log Out </a>  
 
     </div>
   </div>
 </div>
+
+
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
@@ -34,7 +47,10 @@
   </div>
 </header>
 
+
+
 <!-- Page content -->
+
 <div class="w3-content w3-padding" style="max-width:1564px">
 
   <!-- About the food Section -->
@@ -51,7 +67,8 @@
       <p class="w3-opacity">SJU Famous Wraps & Fried Food</p>
       <p> Hours of Operation: <br> Mon - Thurs: 11:00 AM - 11:00 PM <br>
       Fri: 11:00 AM - 7:00 PM <br> Sat - Sun: 5:00 PM-11:00 PM</p>
-      <p><button class="w3-button w3-light-grey w3-block"onclick="window.location.href = '/HawkWraps.php';">Order Now</button>    </div>
+      <p><button class="w3-button w3-light-grey w3-block"onclick="window.location.href = '/HawkWraps.php';">Order Now</button></p>
+    </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="/img/foodplaces/pod.png" alt="P.O.D" style="width:100%">
       <h3>P.O.D Market</h3>
@@ -85,12 +102,12 @@
         <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href = '/YorkStreet.php';" >Order Now</button></p>
     </div>
   </div>
-
-   <!-- Footer -->
+    <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-16">
-    <p>Needs some extra cash?  <a href="http://sjugo.com/JoinOurTeam.php" title="W3.CSS"
+    <p>Needs some extra cash?  <a href="http://sjugo.com/signup2.php" title="W3.CSS"
  target="_blank" class="w3-hover-text-green">Join our team!</a></p>
   </footer>
+
   </body>
   </html>
 

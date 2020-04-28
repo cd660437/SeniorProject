@@ -1,3 +1,16 @@
+<?php 
+include 'server.php';  
+  if (!isset($_SESSION['email'])) {
+        $_SESSION['msg'] = "You must log in first";
+        header('location: singup.php');
+  }
+  if (isset($_GET['logout'])) {
+        session_destroy();
+        unset($_SESSION['email']);
+        header("location: singup.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html>
 <title>FAQs</title>
@@ -13,12 +26,10 @@
 
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="orderNow.html" class="w3-bar-item w3-button">Order Now</a>
-      <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
-      <a href="login.php" class="w3-bar-item w3-button">Log In</a>
-      <a href="singup.php" class="w3-bar-item w3-button">Sign Up</a>
-      <a href="FAQs.html" class="w3-bar-item w3-button">FAQs</a>
-
+      <a href="orderNow.php" class="w3-bar-item w3-button">Order Now</a>
+      <a href="aboutus.php" class="w3-bar-item w3-button">About Us</a>
+      <a href="FAQs.php" class="w3-bar-item w3-button">FAQs</a>
+      <a href="viewCart.php"class="w3-bar-item w3-button">My Cart</a>
 
     </div>
   </div>
@@ -44,7 +55,7 @@
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-16">
-    <p> <a href="homepage.php"" title="W3.CSS" target="_blank" class="w3-hover-text-green">Home</a></p>
+        <a href="http://sjugo.com/index.html" title="W3.CSS"  target="_blank" class$
   </footer>
 
   </body>
